@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<form action="/fact" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="news" name="news" placeholder="Headline of news" type="text">
+    </div>
+    <br> </br> 
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="new_url" name="new_url" placeholder="Enter source url" type="text">
+    <br></br>
+    <button class="btn btn-primary" type="submit">Fact Check</button>
+</form>
+{% endblock %}
